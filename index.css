@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes increase {
+    from {
+        width: 10%;
+    }
+
+    to {
+        width: 100%;
+    }
+    
+}
+
+header {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.897);
+    position: sticky;
+    margin-top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header nav {
+    display: flex;
+    font-size: 15px;
+}
+header nav a {
+    position: relative;
+    margin-left: 10px;
+    text-decoration: none;
+    color: grey;
+    letter-spacing: 4px;
+}
+header nav a .line{
+    position: absolute;
+    top: 19%;
+    width: 100%;
+    height: 3px;
+    background: gold;
+    border-radius: 10px;
+    animation: increase .3s ease-in 0s 1 normal none;
+    display: none;
+}
+header nav a:hover .line{
+    display: block;
+    transform: scale(1.04);
+}
+#prime {
+    position: relative;
+}
+.bage {
+    position: fixed;
+    top: 10%;
+    left: 46%;
+    border-radius: 5px;
+    background: white;
+    width: 250px;
+    padding: 30px;
+    line-height: 30px;
+    display: none;
+}
+
+
+.bage li {
+    list-style-type: none;
+}
+.bage a {
+    font-size: 13px;
+    color: rgb(122, 122, 122);
+    text-decoration: none;
+}
+
+.icons {
+    margin-left: 40px;
+}
+.icons a {
+    font-size: 25px;
+}
+.fpage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.first{
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin-top: 15%;
+}
+.fpage img {
+    width: 100%;
+}
+.first h6 {
+    font-size: 18px;
+    margin-bottom: 35px;
+    font-weight: 200;
+}
+.first h2 {
+    font-size: 72px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: white;
+}
+.first h1 {
+    font-size: 135px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.purchase {
+    display: flex;
+    justify-content: center;
+}
+.purchase a {
+    background: rgb(50, 55, 59);
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 20px;
+    height: 50px;
+    font-weight: 700;
+}
+.purchase a:hover {
+    background: white;
+    color: rgb(233, 51, 81);
+}
+#monies {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.purchase h1 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+.spage {
+    text-align: center;
+    padding-top: 70px;
+}
+.spage h2 {
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+#sint {
+    margin-bottom: 50px;
+}
+table {
+    width: 100%;
+    overflow: hidden;
+    
+}
+table td {
+    position: relative;
+    padding-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+
+table td img{
+    width: 100%;
+    transition: .9s ease;
+}
+
+table .upe{
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(yellow, rgb(0, 0, 0, .1));
+    z-index: 200;
+    padding-top: 55%;
+    display: none;
+    transition: .9s ease;
+}
+table .upe p {
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    top: 0;
+    left: 78%;
+    font-size: 1px;
+}
+table .upe h1 {
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    top: 0;
+    left: 78%;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+table .upe a {
+    text-align: center;
+    background: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 46%;
+    font-size: 30px;
+    outline: none;
+    color: white;
+}
+table .upe a:hover{
+    background: white;
+    color: grey;
+}
+table .upe a i {
+    font-size: 20px;
+    text-align: center;
+}
+
+table td:hover .upe{
+    display: block;
+} 
+
+table td:hover #back{
+    transform: translateX(-100%);
+}
+table #back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    transition: .9s ease;
+}
+table td a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.712);
+}
+table td h4 {
+    margin-bottom: 7px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+table td p {
+    font-size: 15px;
+    color: grey;
+}
+.third-page {
+    text-align: center;
+    padding-top: 70px;
+}
+.third-page h2 {
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+#sint {
+    margin-bottom: 50px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 9%;
+    margin-right: 9%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.wrapper .bag {
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+.wrapper .bag h1{
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 3px;
+    color: rgb(92, 91, 91);
+    margin-bottom: 15px;
+}
+.wrapper .bag p, h2 {
+    display: inline-block;
+    color: rgb(92, 91, 91);
+}
+.wrapper .bag p {
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: gray;
+}
+.amount {
+    display: flex;
+    justify-content: center;
+}
+#doll {
+    font-size: 11px;
+}
+.wrapper .bag h2 {
+    letter-spacing: normal;
+    font-size: 16px;
+    padding-top: 1px;
+}
+.wrapper #bage {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: .9s ease;
+}
+.wrapper .bool {
+    overflow: hidden;
+}
+.wrapper .bag:hover #bage {
+    transform: scale(1.05);
+}
+.fourth-page {
+    text-align: center;
+    padding-top: 170px;
+    background: rgba(241, 239, 239, 0.541);
+}
+.fourth-page h2 {
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.packing {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 160px;
+}
+.packing .one, .two {
+    text-align:left;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+#liner {
+    padding-right: 130px;
+}
+.packing p {
+    color: rgb(92, 91, 91);
+    font-size: 15px;
+    line-height: 26px;
+}
+.packing h1 {
+    font-size: 71px;
+    color: rgb(80, 79, 79);
+}
+.packing a {
+    text-decoration: none;
+}
+.packing h3 {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    color: rgb(73, 73, 73);
+}
+.packing h3:hover {
+    color: goldenrod;
+}
+.packing .one {
+    padding-right: 60px;
+}
+.packing .two {
+    padding-left: 100px;
+    border-left: 1px solid rgb(206, 204, 204);
+}
+.fifth-page {
+    border-bottom: 1px solid rgb(206, 204, 204);
+}
+.package {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 120px;
+    padding-left: 200px;
+    padding-right: 350px;
+    margin-bottom: 0;
+}
+.john {
+    padding-top: 100px;
+    text-align: end;
+    padding-left: 110px;  
+}
+.john h1 {
+    font-size: 60px;
+    color: gold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.john h3 {
+    letter-spacing: 2px;
+}
+.john p {
+    color: rgb(92, 91, 91);
+    font-size: 15px;
+}
+.an, .bn, .cn {
+    display: inline-block;
+    width: 3%;
+    height: 10px;
+    background: rgb(177, 177, 177);
+    border-radius: 50%;
+}
+.bn {
+    background: gold;
+}
+
+.smith {
+    padding-left: 50px;
+}
+.sixth-page {
+    text-align: center;
+    padding-top: 130px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 150px;
+}
+.sixth-page h2 {
+    letter-spacing: 3px;
+    color: rgb(92, 91, 91);
+}
+.sixth-page p {
+    color: rgb(43, 42, 42);
+}
+.sixth-page i {
+    color: grey;
+}
+.sixth-page i:hover {
+    color: goldenrod;
+}
+.seventh-page {
+    text-align: center;
+    padding-top: 130px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 150px;
+    background: rgb(0, 0, 29);
+}
+.seventh-page h2 {
+    letter-spacing: 3px;
+    color: white;
+}
+.seventh-page p {
+    color: rgb(117, 117, 117);
+}
+.seventh-page #mail {
+    width: 450px;
+    height: 50px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+}
+.seventh-page #send {
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: .6s ease;
+}
+.seventh-page #send:hover {
+    background: white;
+    color: rgb(0, 0, 29);
+    font-weight: 600;
+}
+footer {
+    background: rgba(0, 0, 29, 0.918);
+    padding-bottom: 60px;
+    text-align: center;
+}
+footer .spark {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+footer .spark a {
+    color: rgb(117, 117, 117);
+    text-decoration: none;
+    line-height: 27px;
+    transition: .9s ease;
+}
+footer .spark a:hover {
+    color: white;
+}
+footer .spark h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.and, .band, .cand, .dand {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    color: rgb(117, 117, 117);
+    width: 205px;
+    line-height: 27px;
+    font-size: 14px;
+}
+.and {
+    justify-content: left;
+    text-align: left;
+}
+.and img {
+    margin-top: 20px;
+    width: 140px;
+}
+.and p {
+    padding-bottom: 18px;
+}
+footer p {
+    text-align: center;
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+}
+footer #arr {
+    text-align: center;
+    color: rgb(117, 117, 117);
+    padding: 5px;
+    border: 1px solid rgb(117, 117, 117);
+    transition: .9s ease;
+}
+footer #arr:hover {
+    background: white;
+}
+
+@media(max-height: 700px) {
+    header {
+        width: 100%;
+    }
+
+    
+}
